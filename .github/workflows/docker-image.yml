@@ -12,7 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: docker login
-      working-directory: ./app-storage
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
