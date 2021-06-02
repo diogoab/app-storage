@@ -26,9 +26,17 @@ spec:
       labels:
         app: app-storage
     spec:
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: aws-secret
       containers:
       - name: app-storage
-        image: YOUR-IMAGE-HERE:latest
+        image: YOUR_IMAGEM_HERE:latest
+        volumeMounts:
+        - name: secret-volume
+          readOnly: true
+          mountPath: "/etc/secret-volume"
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
