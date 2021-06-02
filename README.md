@@ -43,13 +43,15 @@ $ terraform apply
 ```
 #### Part Two
 
-5. Create a bucket with TF and update name on the `app.py` file on line 10.
-
-6. Run the docker!
+1. Create a bucket with TF, navegate up folder, search app folder and update name on the `app.py` file on line 10.
+```
+cd ../app-storage
+```
+2. Run the docker!
 ```
 docker-compose up -d
 ```
-7. Navigate to http://localhost:5000/storage
+3. Navigate to http://localhost:5000/storage
 
 #### Hey, is You advanced User? So:
  - Fork this repo and run the actions pipelines with configs of your [DockerHub](https://hub.docker.com/) 
