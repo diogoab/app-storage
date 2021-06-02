@@ -55,11 +55,21 @@ docker-compose up -d
 
 #### Hey, is You advanced User? So:
  - Fork this repo and run the actions pipelines with configs of your [DockerHub](https://hub.docker.com/) 
+ - looking here https://github.com/diogoab/app-storage/actions
 
 #### Run the next stage
  - Look folder Kubernetes and run the deploy in [play with kubernetes platform](https://labs.play-with-k8s.com/)
+
+ - Execute this
+ ```
+ kubectl create secret generic aws-secret --from-literal=AWS_ACCESS_KEY=access-key --from-literal=AWS_SECRET_KEY=secret-key --from-literal=AWS_DEFAULT_REGION=us-east-1
+ ```
  
-p.s: remember to change the image name first, line 31
+ - before
+ ```
+ kubectl apply -f deployment.yaml
+ ```
+p.s: remember to change the image name first, line 35
 
 #### How to monitor this
 
