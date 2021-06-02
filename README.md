@@ -68,7 +68,14 @@ docker-compose up -d
  - before
  ```
  kubectl apply -f deployment.yaml
+ 
+ kubectl get pods
  ```
+
+- if LB doesn't go up, run this
+```
+ kubectl port-forward --address 0.0.0.0 <name-your-pod> 5000:5000
+```
 p.s: remember to change the image name first, line 35
 
 #### How to monitor this
