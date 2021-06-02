@@ -6,8 +6,8 @@
 
 Kindly ensure you have the following installed on your machine:
 
-- [ ] [Docker](https://realpython.com/installing-python/)
-- [ ] [Docker-compose](https://pipenv.readthedocs.io/en/latest/#install-pipenv-today)
+- [ ] [Docker](https://docs.docker.com/get-docker/)
+- [ ] [Docker-compose](https://docs.docker.com/compose/install/)
 - [ ] [Git]()
 - [ ] An IDE or Editor of your choice
 - [ ] For Windows Users please search about VM Linux rsrs, 
